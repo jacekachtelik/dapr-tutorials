@@ -1,7 +1,7 @@
 # DAPR Tutoriale
 
-Niniejsze repozytorium zawiera przykłady niektórych tutoriali.
+Niniejsze repozytorium zawiera przykłady niektórych tutoriali wykorzystania DAPR-a.
 
-Są to:
+Tutoriale:
 1. Hello-World
 2. Service Invocation

@@ -1,0 +1,4 @@
+02-service-invocation/python/publisher/publisher/*
+02-service-invocation/python/subscriber/subscriber/*
+02-service-invocation/python/publisher/.dapr/*
+02-service-invocation/python/subscriber/.dapr/*
