@@ -1,0 +1,9 @@
+version: 1
+apps:
+  - appDirPath: ./subscriber/
+    appID: subscriber-app
+    appPort: 8001
+    command: ["./subscriber/bin/python3", "app.py"]
+  - appID: publisher-app
+    appDirPath: ./publisher/
+    command: ["./publisher/bin/python3", "app.py"]
