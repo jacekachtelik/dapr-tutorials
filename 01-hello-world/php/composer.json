@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dapr/php-sdk": "v1.2.0"
+    }
+}

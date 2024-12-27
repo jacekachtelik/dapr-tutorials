@@ -2,3 +2,15 @@
 02-service-invocation/python/subscriber/subscriber/*
 02-service-invocation/python/publisher/.dapr/*
 02-service-invocation/python/subscriber/.dapr/*
+03-publish-and-subscribe/python/sdk/publisher/publisher/*
+03-publish-and-subscribe/python/sdk/subscriber/subscriber/*
+03-publish-and-subscribe/python/sdk/subscriber/__pycache__/*
+03-publish-and-subscribe/python/sdk/subscriber-fastapi/subscriber-fastapi/*
+03-publish-and-subscribe/python/sdk/publisher/.dapr/*
+03-publish-and-subscribe/python/sdk/subscriber/.dapr/*
+03-publish-and-subscribe/python/sdk/subscriber-fastapi/.dapr/*
+03-publish-and-subscribe/python/http/publisher/publisher/*
+03-publish-and-subscribe/python/http/subscriber/subscriber/*
+03-publish-and-subscribe/python/http/subscriber/__pycache__/*
+03-publish-and-subscribe/python/http/publisher/.dapr/*
+03-publish-and-subscribe/python/http/subscriber/.dapr/*
