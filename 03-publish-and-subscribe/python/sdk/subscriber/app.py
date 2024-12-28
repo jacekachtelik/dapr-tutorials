@@ -5,14 +5,14 @@ import os
 
 app = Flask(__name__)
 
-app_port = os.getenv("APP_PORT", "6001")
+app_port = os.getenv("APP_PORT", "56001")
 
 
 # Register Dapr pub/sub subscriptions
 @app.route("/dapr/subscribe", methods=["GET"])
 def subscribe():
     subscriptions = [
-        {"pubsubname": "documentspubsub", "topic": "documents", "route": "documents"}
+        {"pubsubname": "orderpubsub", "topic": "documents", "route": "documents"}
     ]
     print("Dapr pub/sub is zasubskrybowany do: " + json.dumps(subscriptions))
     return jsonify(subscriptions)
@@ -28,5 +28,6 @@ def documents_subscriber():
 
 app.run(port=app_port)
 
-# sudo dapr run --app-id subscriber-sdk --app-port 6001 --resources-path $HOME/.dapr/components/ -- ./subscriber/bin/uvicorn app:app --port 6002
-# sudo dapr stop -app-id subscriber-sdk
+# sudo dapr run --app-id subscriber-sdk --app-port 6002 --resources-path $HOME/.dapr/components/ -- ./subscriber/bin/uvicorn app:app
+# sudo dapr run --app-id subscriber-sdk --app-port 6002 --resources-path $HOME/.dapr/components/ -- ./subscriber/bin/python3 app.py
+# sudo dapr run --app-id subscriber-sdk --app-port 6002 --resources-path ../../../myComponents/ -- ./subscriber/bin/python3 app.py

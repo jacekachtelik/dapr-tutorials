@@ -2,6 +2,9 @@
 02-service-invocation/python/subscriber/subscriber/*
 02-service-invocation/python/publisher/.dapr/*
 02-service-invocation/python/subscriber/.dapr/*
+02-service-invocation/php/vendor/*
+02-service-invocation/php/composer.lock
+
 03-publish-and-subscribe/python/sdk/publisher/publisher/*
 03-publish-and-subscribe/python/sdk/subscriber/subscriber/*
 03-publish-and-subscribe/python/sdk/subscriber/__pycache__/*

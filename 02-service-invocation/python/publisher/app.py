@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 base_url = (
     os.getenv("BASE_URL", "http://localhost")
     + ":"
-    + os.getenv("DAPR_HTTP_PORT", "3515")
+    + os.getenv("DAPR_HTTP_PORT", "3510")
 )
 
 
@@ -37,3 +37,5 @@ for counter in range(1, 20):
     time.sleep(1)
 
 # sudo dapr run --app-id publisher-app --app-protocol http --dapr-http-port 3515 -- ./publisher/bin/python3 app.py
+# lub
+# ./publisher/bin/python3 app.py
